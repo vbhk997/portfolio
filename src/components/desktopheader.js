@@ -24,8 +24,8 @@ const DesktopHeader = () => {
         <li><a href="/about">About Me</a></li>
         <li><a href="/experience">Experience</a></li>
         <li><a href="/resume">Resume</a></li>
-        <li><a href="https://www.linkedin.com/in/vaibhavkumarprofile" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/vbhk998" target="_blank">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/vaibhavkumarprofile" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/vbhk998" target="_blank" rel="noreferrer">Github</a></li>
       </ul>
     </nav>
   );
