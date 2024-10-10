@@ -31,8 +31,8 @@ const HeaderMobile = () => {
         <a href="/about">About</a>
         <a href="/experience">Experience</a>
         <a href="/resume">Resume</a>
-        <li><a href="https://www.linkedin.com/in/vaibhavkumarprofile">LinkedIn</a></li>
-        <li><a href="https://github.com/vbhk997?tab=repositories">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/vaibhavkumarprofile" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/vbhk997?tab=repositories" target="_blank" rel="noreferrer">Github</a></li>
       </nav>
     </header>
   );
