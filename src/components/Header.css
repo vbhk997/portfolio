@@ -1,0 +1,125 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: white; /* Set background to white */
+    color: black; /* Set text color to black */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between; /* Space between logo and menu */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Allow this section to grow */
+  }
+  
+  .logo {
+    height: 50px; /* Adjust based on the size of your logo */
+    margin-right: 10px; /* Space between logo and name */
+  }
+  
+  .team-name {
+    font-size: 18px; /* Smaller text size */
+    margin: 0; /* Remove margin */
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    flex: 2; /* Allow this section to grow more than logo */
+    justify-content: center; /* Center menu items */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .menu li {
+    margin: 0 15px; /* Space between menu items */
+    position: relative;
+  }
+  
+  .menu a {
+    color: black; /* Change link color to black */
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px; /* Size of the hamburger icon */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    padding-right: 20px; /* Add right padding to dropdown */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    right: 0; /* Position dropdown to the right of the menu item */
+    top: 100%; /* Positions the dropdown below the menu item */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content li {
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .dropdown-content li a {
+    color: black; /* Change link color in dropdown to black */
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: row; /* Keep header items in a row */
+      justify-content: space-between; /* Keep logo on the left, hamburger on the right */
+    }
+  
+    .logo-container {
+      justify-content: flex-start; /* Align logo to the start */
+    }
+  
+    .menu {
+      flex-direction: column; /* Stack menu items vertically */
+      align-items: flex-start; /* Align items to the left */
+      width: 100%; /* Full width on mobile */
+      padding: 10px 0; /* Padding for mobile */
+      display: none; /* Hide menu by default */
+    }
+  
+    .menu.active {
+      display: flex; /* Show menu when active */
+    }
+  
+    .menu li {
+      margin: 5px 0; /* Space between items */
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger menu on mobile */
+    }
+  }
+  

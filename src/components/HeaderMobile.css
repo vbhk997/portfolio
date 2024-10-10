@@ -1,0 +1,116 @@
+/* HeaderMobile.css */
+
+.header-mobile {
+    display: flex;
+    justify-content: space-between; /* Space between logo/name and hamburger */
+    align-items: center; /* Center items vertically */
+    background-color: white;
+    color: black;
+    padding: 10px 20px; /* Adjusted padding for balance */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    height: 60px; /* Fixed height for the header */
+  }
+  
+  .logo-container-mobile {
+    display: flex;
+    align-items: center; /* Center logo and name vertically */
+  }
+  
+  .logo-mobile {
+    height: 40px; /* Set logo height */
+    margin-right: 10px; /* Space between logo and name */
+  }
+  
+  .team-name-mobile {
+    font-size: 14px; /* Adjust font size */
+    white-space: nowrap; /* Prevent text from wrapping */
+    line-height: 1; /* Ensure consistent vertical alignment */
+    display: flex;
+    align-items: center; /* Center text vertically */
+  }
+  
+  .hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Center hamburger icon vertically */
+    height: 100%; /* Ensures it takes the full height of the header */
+  }
+  
+  /* Hide the menu by default */
+  .menu-mobile {
+    list-style: none;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px; /* Position below the header */
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+  }
+  
+  .menu-mobile.show-menu {
+    display: flex; /* Show menu when toggled */
+  }
+  
+  .menu-mobile a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px; /* Padding for menu items */
+    display: block;
+    width: 100%;
+  }
+  
+  .menu-mobile a:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+  }
+  
+  .dropdown-mobile {
+    position: relative;
+  }
+  
+  .dropdown-content-mobile {
+    display: none;
+    position: absolute;
+    top: 100%; /* Place the dropdown below the "Contact Us" link */
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 10px 0; /* Padding for dropdown items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+  }
+  
+  /* Show dropdown content when hovering */
+  .dropdown-mobile:hover .dropdown-content-mobile {
+    display: block;
+  }
+  
+  .dropdown-content-mobile a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px; /* Padding for dropdown items */
+    display: block;
+  }
+  
+  .dropdown-content-mobile a:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+  }
+  
+  .team-name-mobile {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Perfectly centers the team name */
+    text-align: center;
+  }
+  
+  .team-name {
+    font-size: 18px;
+    font-weight: bold;
+  }

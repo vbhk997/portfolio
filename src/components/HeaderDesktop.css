@@ -1,0 +1,125 @@
+/* HeaderDesktop.css */
+
+.header-desktop {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.team-name-container {
+    display: flex; /* Ensure it takes up space next to the logo */
+    align-items: center; /* Center the text vertically */
+}
+
+.team-name {
+    font-size: 18px;
+}
+
+/* Adjust menu container */
+.menu-desktop {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    margin-right: 30px; /* Add margin to the right to avoid hitting the page edge */
+}
+
+/* Adjust each menu item */
+.menu-desktop li {
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Adjust dropdown */
+.dropdown-content-desktop {
+    display: none;
+    position: absolute;
+    background-color: white;
+    right: 0;
+}
+
+.dropdown-desktop:hover .dropdown-content-desktop {
+    display: block;
+}
+
+.menu-desktop a {
+    text-decoration: none;
+    color: black; /* You can set any color you prefer */
+    font-weight: bold; /* Optional for emphasis */
+}
+
+/* Change color when hovering */
+.menu-desktop a:hover {
+    color: gray; /* Optional: changes the color when hovered */
+}
+
+/* Dropdown content styles */
+.dropdown-content-desktop a {
+    text-decoration: none;
+    color: black; /* Ensure dropdown links also follow the same styles */
+}
+
+.dropdown-content-desktop a:hover {
+    color: gray; /* Optional hover color */
+}
+
+/* Contact Us dropdown container */
+.dropdown-desktop {
+    position: relative;
+}
+
+/* Dropdown content */
+.dropdown-content-desktop {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px; /* Minimum width for the dropdown */
+    padding: 10px 20px; /* Add padding for a cleaner look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for elegance */
+    border-radius: 8px; /* Rounded corners */
+    left: 50%; /* Align dropdown to the center of the button */
+    transform: translateX(-50%); /* Center it perfectly below the text */
+    z-index: 1; /* Ensure it shows on top */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially not visible */
+}
+
+/* Show dropdown on hover */
+.dropdown-desktop:hover .dropdown-content-desktop {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dropdown links */
+.dropdown-content-desktop a {
+    text-decoration: none;
+    color: black;
+    display: block; /* Each link takes up a full row */
+    padding: 8px 0; /* Add space between links */
+    transition: background-color 0.3s ease;
+}
+
+/* Dropdown link hover effect */
+.dropdown-content-desktop a:hover {
+    background-color: #f0f0f0; /* Light background on hover for elegance */
+}
