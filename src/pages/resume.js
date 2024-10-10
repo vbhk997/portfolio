@@ -37,7 +37,7 @@ const resumeData = {
     {
       project: 'Smart Trolley System',
       timeWorked: 'Aug 2024 - Present',
-      description: 'Designing a comprehensive trolley system architecture integra2ng IoT sensors, RFID technology, and Computer Vision. Aspiring to analyze data from over 1,000 shopping sessions to iden2fy paCerns and op2mize system performance.',
+      description: 'Designing a comprehensive trolley system architecture integrating IoT sensors, RFID technology, and Computer Vision. Aspiring to analyze data from over 1,000 shopping sessions to identify patterns and optimize system performance.',
     },
     {
       project: 'Inchat - Texting App (Android)',
