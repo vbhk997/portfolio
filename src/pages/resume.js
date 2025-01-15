@@ -8,7 +8,7 @@ const resumeData = {
       institution: 'The Pennsylvania State University, University Park, PA',
       major: 'B.S. Computer Science',
       minor: 'Cybersecurity, Engineering Entrepreneurship',
-      gpa: '3.85',
+      gpa: '3.88',
       yearsAttended: '2022 - Present',
     },
     {
