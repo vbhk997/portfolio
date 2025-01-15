@@ -35,6 +35,16 @@ const resumeData = {
   ],
   projectExperience: [
     {
+      project: 'Travalis',
+      timeWorked: 'Sept 2024 - Present',
+      description: 'Developing an Android / IOS application for an AI based Online Travel Agency.'
+    },
+    {
+      project: 'Monomoney',
+      timeWorked: 'Dec 2024 - Jan 2025',
+      description: 'Developed an Android / IOS application for online transaction for Monopoly Board Game.'
+    },
+    {
       project: 'Smart Trolley System',
       timeWorked: 'Aug 2024 - Present',
       description: 'Designing a comprehensive trolley system architecture integrating IoT sensors, RFID technology, and Computer Vision. Aspiring to analyze data from over 1,000 shopping sessions to identify patterns and optimize system performance.',
@@ -46,7 +56,7 @@ const resumeData = {
     },
     {
       project: 'Smart Business Cards',
-      timeWorked: 'Jun 2024 - Jul 2024',
+      timeWorked: 'Jun 2022 - Jul 2022',
       description: 'Developed an Android application for editing data on NFC cards, making electronic business cards for easier networking.'
     }
   ],
@@ -76,6 +86,10 @@ const resumeData = {
     {
       course: 'Udemy (Currently Pursuing)',
       description: 'Machine Learning A-Z, (Python and R)',
+    },
+    {
+      course: 'Udemy (Currently Pursuing)',
+      description: 'Digital Marketing',
     },
     {
       course: 'The Odin Project (Currently Pursuing)',

@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import BannerImage from '../assets/images/nyc.jpeg'; // Update with your image path
-import ProjectLogo from '../assets/images/logo.png'; // Update with your logo image path
 import IntroductionImage from '../assets/images/photo.jpg'; // Update with your introduction image path
 import lnt from '../assets/images/images.png'
 import trolley from '../assets/images/trolley.png'
-import guide from '../assets/images/guide.png'
 import inchat from '../assets/images/inchat.png'
 import pythonimg from '../assets/images/pythonimg.jpeg'
 import iot from '../assets/images/iot.png'
@@ -12,9 +10,13 @@ import vk from '../assets/images/vk.png'
 import alexa from '../assets/images/alexa.png'
 import trolleyl from '../assets/images/trolleyimg.png'
 import arrl from '../assets/images/augment.png'
-import loc from '../assets/images/loc.jpg'
 import bucard from '../assets/images/bucard.png'
 import nfctag from '../assets/images/nfctag.png'
+import image from  '../assets/images/travalis.png'
+import app from  '../assets/images/app.png'
+import mm1 from  '../assets/images/monomoney1.jpeg'
+import mm2 from  '../assets/images/monomoney2.jpeg'
+import mmlogo from  '../assets/images/monomoneylogo.jpeg'
 
 const MobileHome = () => {
   const [fontSize, setFontSize] = useState('20vw'); // Initial font size
@@ -31,24 +33,16 @@ const MobileHome = () => {
       procedure: 'Procedure',
       proceduredescription: [
         {
-          title: 'Trolley Setup',
-          description: 'Install RFID readers, cameras, and a display screen on the trolley to detect items and display the total cost.'
+          title: 'Work',
+          description: 'Helped ⁠formulate Alexa Skill integrations with automotive systems, enhancing navigation accuracy for 10,000+ cities. '
         },
         {
-          title: 'Item Detection',
-          description: 'RFID tags identify items placed in or removed from the cart, verified by cameras.'
+          title: 'Contribution',
+          description: 'Contributed to Smart Vehicle technologies by developing real time distance calculations using Python. Contributed towards final presentation for potential clients.'
         },
         {
-          title: 'Display Update',
-          description: 'Real-time price calculation and updates on the screen, reflecting items added or removed.'
-        },
-        {
-          title: 'Inventory Synchronization',
-          description: 'Communicates with the store\'s system to update stock levels in real time.'
-        },
-        {
-          title: 'Checkout Process',
-          description: 'Pre-calculated total at checkout for fast, seamless payments.'
+          title: 'Technology Used',
+          description: 'AWS Lambda, Alexa skill Integration, Python, Google Distance Matrix API, Google Maps API'
         }
       ],
       impact: 'IMPACT',
@@ -130,8 +124,31 @@ const MobileHome = () => {
       ],
     },
     {
-      logo: guide,
-      lightbox1: loc,
+      logo: mmlogo,
+      lightbox1: mm1,
+      lightbox2: mm2,
+      name: 'Online Banking System for Monopoly',
+      description: 'App based transaction system for Monopoly Board Game',
+      details: 'Designed a comprehensive online banking system for Monopoly using React Native, for IOS and Android Devices.',
+      procedure: 'PROCEDURE',
+      proceduredescription: [
+        {
+          title: 'Tech Stack',
+          description: 'Javascript, Typescript, HTML, CSS, React Native'
+        },
+        {
+          title: 'Working',
+          description: 'Removes cash transactions from the Monopoly board game enabling users to go cash free with an online transaction system.'
+        },
+        {
+          title: 'Features',
+          description: 'Allows in game features such as buying and trading properties, as well as creating a game lobby.'
+        }
+      ],
+    },
+    {
+      logo: image,
+      lightbox1: app,
       lightbox2: arrl,
       name: 'Travel Companion App',
       description: 'AI based augmented reality Travel Guide',
